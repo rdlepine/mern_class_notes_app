@@ -1,0 +1,73 @@
+<DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8" name="viewport" content="width=device-width">
+        <title>My Mern Class</title>
+        <link rel="stylesheet" href="style.css" >
+    </head>
+    <body>
+        <h2>Notes Taking App</h2>
+        
+        <form id="notes_get_form">
+            <field>
+               <label>GET All Notes: </label>
+                <button id="getButton" name="getButton" value="submit" type="submit">Submit</button>
+            </field>
+        </form>
+
+
+        <form id="notes_find_form">
+                <field>
+                   <label>GET Notes: </label>
+                   <label>Note ID: </label>
+                   <input id="noteId" name="noteId" type="text" placeholder="Note ID" />
+                   <button id="getButton" name="getButton" value="submit" type="submit">GET Note</button>
+                </field>
+        </form>
+
+        <form id="notes_post_form">
+            <field>
+                <label>CREATE NOTE:</label>
+                <label>Note Title: </label>
+                <input id="noteTitle" name="noteTitle" type="text" placeholder="Note Title" />
+                <label>Note Descrption: </label>
+                <input id="noteDescription" name="noteDescriptoin" type="text" placeholder="Note Description" />
+                <button id="postButton" name="postButton" value="submit" type="submit" method="POST">CREATE NOTE</button>
+            </field>
+        </form>
+
+        <form id="note_update_form">
+                <field>
+                    <label>UPDATE NOTE</label><br />
+                    <label>Note Title</label>
+                    <input id="noteTitle" name="noteTitle" type="text" placeholder="Title" />
+                    <label>Note Description</label>
+                    <input id="noteDescription" name="noteDescription" type="text" placeholder="Description" />
+                    <label>Note Id</label>
+                    <input id="noteId" name="noteId" type="text" placeholder="Movie Id" />
+            
+                    <button id="delButton" name="delButton" value="submit" method="PUT" type="submit">Update</button>
+                 </field>
+        </form>
+
+        <form id="user_delete_form">
+                <field>
+                    <label>DELETE</label>
+                    <label>MOVIE ID</label>
+                    <input id="noteId" name="noteId" type="text" placeholder="Note Id" />
+                    <button id="delButton" name="delButton" value="submit" type="submit">Delete Note</button>
+                 </field>
+        </form>
+
+
+ 
+
+        <h2>Database</h2>
+        <div id="results">
+            
+        </div>
+
+        <div id="status"></div>
+        <script src="./api.js"></script>
+    </body>
+</html>

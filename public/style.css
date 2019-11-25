@@ -1,0 +1,16 @@
+body {
+    background-color: lightgrey;
+    padding: .5em; 
+}
+
+h2 {
+    text-align: center;
+}
+
+form, #results {
+   border-style: groove;
+   border-radius: .5em;
+   padding: 1em;
+   margin: 1em;
+   background-color: white;
+}
